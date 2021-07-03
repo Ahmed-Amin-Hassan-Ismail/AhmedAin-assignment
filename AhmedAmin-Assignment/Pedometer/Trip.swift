@@ -10,7 +10,7 @@ import Foundation
 
 class Trip {
     
-    var numberOfSteps: NSNumber
+    private var numberOfSteps: NSNumber
     
     init(numberOfSteps: NSNumber) {
         self.numberOfSteps = numberOfSteps

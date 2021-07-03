@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1579D7F826911365007633C3 /* AhmedAmin_Assignment_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579D7F726911365007633C3 /* AhmedAmin_Assignment_Tests.swift */; };
+		1579D80626911376007633C3 /* AhmedAmin_Assignment_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579D80526911376007633C3 /* AhmedAmin_Assignment_UITests.swift */; };
+		1579D80E269113AF007633C3 /* PedometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579D80D269113AF007633C3 /* PedometerTests.swift */; };
 		15DEECF7268E013800B26CB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DEECF6268E013800B26CB9 /* AppDelegate.swift */; };
 		15DEECF9268E013800B26CB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DEECF8268E013800B26CB9 /* SceneDelegate.swift */; };
 		15DEECFB268E013800B26CB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DEECFA268E013800B26CB9 /* ViewController.swift */; };
@@ -18,7 +21,31 @@
 		15DEED14268E081A00B26CB9 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DEED13268E081A00B26CB9 /* Trip.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1579D7FA26911365007633C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15DEECEB268E013800B26CB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15DEECF2268E013800B26CB9;
+			remoteInfo = "AhmedAmin-Assignment";
+		};
+		1579D80826911376007633C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15DEECEB268E013800B26CB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15DEECF2268E013800B26CB9;
+			remoteInfo = "AhmedAmin-Assignment";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1579D7F526911365007633C3 /* AhmedAmin-Assignment-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AhmedAmin-Assignment-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1579D7F726911365007633C3 /* AhmedAmin_Assignment_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhmedAmin_Assignment_Tests.swift; sourceTree = "<group>"; };
+		1579D7F926911365007633C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1579D80326911376007633C3 /* AhmedAmin-Assignment-UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AhmedAmin-Assignment-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1579D80526911376007633C3 /* AhmedAmin_Assignment_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhmedAmin_Assignment_UITests.swift; sourceTree = "<group>"; };
+		1579D80726911376007633C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1579D80D269113AF007633C3 /* PedometerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerTests.swift; sourceTree = "<group>"; };
 		15DEECF3268E013800B26CB9 /* AhmedAmin-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AhmedAmin-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DEECF6268E013800B26CB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15DEECF8268E013800B26CB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +60,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1579D7F226911365007633C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1579D80026911376007633C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15DEECF0268E013800B26CB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +84,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1579D7F626911365007633C3 /* AhmedAmin-Assignment-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1579D7F726911365007633C3 /* AhmedAmin_Assignment_Tests.swift */,
+				1579D80D269113AF007633C3 /* PedometerTests.swift */,
+				1579D7F926911365007633C3 /* Info.plist */,
+			);
+			path = "AhmedAmin-Assignment-Tests";
+			sourceTree = "<group>";
+		};
+		1579D80426911376007633C3 /* AhmedAmin-Assignment-UITests */ = {
+			isa = PBXGroup;
+			children = (
+				1579D80526911376007633C3 /* AhmedAmin_Assignment_UITests.swift */,
+				1579D80726911376007633C3 /* Info.plist */,
+			);
+			path = "AhmedAmin-Assignment-UITests";
+			sourceTree = "<group>";
+		};
 		15DEECEA268E013800B26CB9 = {
 			isa = PBXGroup;
 			children = (
 				15DEECF5268E013800B26CB9 /* AhmedAmin-Assignment */,
+				1579D7F626911365007633C3 /* AhmedAmin-Assignment-Tests */,
+				1579D80426911376007633C3 /* AhmedAmin-Assignment-UITests */,
 				15DEECF4268E013800B26CB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				15DEECF3268E013800B26CB9 /* AhmedAmin-Assignment.app */,
+				1579D7F526911365007633C3 /* AhmedAmin-Assignment-Tests.xctest */,
+				1579D80326911376007633C3 /* AhmedAmin-Assignment-UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +191,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1579D7F426911365007633C3 /* AhmedAmin-Assignment-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1579D7FE26911365007633C3 /* Build configuration list for PBXNativeTarget "AhmedAmin-Assignment-Tests" */;
+			buildPhases = (
+				1579D7F126911365007633C3 /* Sources */,
+				1579D7F226911365007633C3 /* Frameworks */,
+				1579D7F326911365007633C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1579D7FB26911365007633C3 /* PBXTargetDependency */,
+			);
+			name = "AhmedAmin-Assignment-Tests";
+			productName = "AhmedAmin-Assignment-Tests";
+			productReference = 1579D7F526911365007633C3 /* AhmedAmin-Assignment-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1579D80226911376007633C3 /* AhmedAmin-Assignment-UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1579D80A26911376007633C3 /* Build configuration list for PBXNativeTarget "AhmedAmin-Assignment-UITests" */;
+			buildPhases = (
+				1579D7FF26911376007633C3 /* Sources */,
+				1579D80026911376007633C3 /* Frameworks */,
+				1579D80126911376007633C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1579D80926911376007633C3 /* PBXTargetDependency */,
+			);
+			name = "AhmedAmin-Assignment-UITests";
+			productName = "AhmedAmin-Assignment-UITests";
+			productReference = 1579D80326911376007633C3 /* AhmedAmin-Assignment-UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		15DEECF2268E013800B26CB9 /* AhmedAmin-Assignment */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15DEED07268E013900B26CB9 /* Build configuration list for PBXNativeTarget "AhmedAmin-Assignment" */;
@@ -154,6 +254,14 @@
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = AhmedAmin;
 				TargetAttributes = {
+					1579D7F426911365007633C3 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 15DEECF2268E013800B26CB9;
+					};
+					1579D80226911376007633C3 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 15DEECF2268E013800B26CB9;
+					};
 					15DEECF2268E013800B26CB9 = {
 						CreatedOnToolsVersion = 11.1;
 					};
@@ -173,11 +281,27 @@
 			projectRoot = "";
 			targets = (
 				15DEECF2268E013800B26CB9 /* AhmedAmin-Assignment */,
+				1579D7F426911365007633C3 /* AhmedAmin-Assignment-Tests */,
+				1579D80226911376007633C3 /* AhmedAmin-Assignment-UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1579D7F326911365007633C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1579D80126911376007633C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15DEECF1268E013800B26CB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,6 +315,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1579D7F126911365007633C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1579D7F826911365007633C3 /* AhmedAmin_Assignment_Tests.swift in Sources */,
+				1579D80E269113AF007633C3 /* PedometerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1579D7FF26911376007633C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1579D80626911376007633C3 /* AhmedAmin_Assignment_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15DEECEF268E013800B26CB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,6 +346,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1579D7FB26911365007633C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15DEECF2268E013800B26CB9 /* AhmedAmin-Assignment */;
+			targetProxy = 1579D7FA26911365007633C3 /* PBXContainerItemProxy */;
+		};
+		1579D80926911376007633C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15DEECF2268E013800B26CB9 /* AhmedAmin-Assignment */;
+			targetProxy = 1579D80826911376007633C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		15DEECFC268E013800B26CB9 /* Main.storyboard */ = {
@@ -226,6 +380,84 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1579D7FC26911365007633C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4SYRBQBFW;
+				INFOPLIST_FILE = "AhmedAmin-Assignment-Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmedAmin.AhmedAmin-Assignment-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AhmedAmin-Assignment.app/AhmedAmin-Assignment";
+			};
+			name = Debug;
+		};
+		1579D7FD26911365007633C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4SYRBQBFW;
+				INFOPLIST_FILE = "AhmedAmin-Assignment-Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmedAmin.AhmedAmin-Assignment-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AhmedAmin-Assignment.app/AhmedAmin-Assignment";
+			};
+			name = Release;
+		};
+		1579D80B26911376007633C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4SYRBQBFW;
+				INFOPLIST_FILE = "AhmedAmin-Assignment-UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmedAmin.AhmedAmin-Assignment-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AhmedAmin-Assignment";
+			};
+			name = Debug;
+		};
+		1579D80C26911376007633C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4SYRBQBFW;
+				INFOPLIST_FILE = "AhmedAmin-Assignment-UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmedAmin.AhmedAmin-Assignment-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AhmedAmin-Assignment";
+			};
+			name = Release;
+		};
 		15DEED05268E013900B26CB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -379,6 +611,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1579D7FE26911365007633C3 /* Build configuration list for PBXNativeTarget "AhmedAmin-Assignment-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1579D7FC26911365007633C3 /* Debug */,
+				1579D7FD26911365007633C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1579D80A26911376007633C3 /* Build configuration list for PBXNativeTarget "AhmedAmin-Assignment-UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1579D80B26911376007633C3 /* Debug */,
+				1579D80C26911376007633C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		15DEECEE268E013800B26CB9 /* Build configuration list for PBXProject "AhmedAmin-Assignment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -13,7 +13,6 @@ import CoreMotion
 class Pedometer {
     
     // MARK: - Properties
-    static let shared = Pedometer()
     private let pedometer = CMPedometer()
     private let activityManager = CMMotionActivityManager()
     private var endDate: Date?
@@ -23,26 +22,26 @@ class Pedometer {
     
     
     // MARK: - Init
-    private init() { }
+    init(startDate: Date? = nil, endDate: Date? = nil) {
+        self.startDate = startDate
+        self.endDate = endDate
+    }
+    
+    
     
     
     
     // MARK: - Methods
-    func setupPedometer() {
-        if CMPedometer.authorizationStatus() == .authorized ||
-            CMPedometer.isStepCountingAvailable() {
+    func setupActivityManager() {
+        if CMMotionActivityManager.isActivityAvailable() && CMPedometer.authorizationStatus() == .authorized && CMPedometer.isStepCountingAvailable() {
             startTrackingActivityType()
         } else {
             print("cout steps is not available on your device")
         }
     }
-}
-
-
-// MARK: - Helper Methods
-
-extension Pedometer {
-    fileprivate func countingSteps() {
+    
+    
+    func countingSteps() {
         pedometer.startUpdates(from: date) { [weak self] (data, errors) in
             guard let self = self else { return }
             
@@ -60,7 +59,7 @@ extension Pedometer {
     }
     
     // Handle Number of steps
-    fileprivate func handlesSteps(_ data: CMPedometerData) {
+    func handlesSteps(_ data: CMPedometerData) {
         
         // If User Stop 5 min
         if endDate?.advanced(by: TimeInterval(300)) ?? date > startDate ?? date {
@@ -69,7 +68,7 @@ extension Pedometer {
     }
     
     // Indicate if the user stationary or walking
-    fileprivate func startTrackingActivityType() {
+    func startTrackingActivityType() {
         activityManager.startActivityUpdates(to: OperationQueue.main) {
             [weak self] (activity: CMMotionActivity?) in
             
@@ -77,14 +76,16 @@ extension Pedometer {
             guard let activity = activity else { return }
             
             if activity.stationary {
+                
                 self.pedometer.stopUpdates()
                 self.endDate = activity.startDate
+                
             } else if activity.walking {
+                
                 self.countingSteps()
                 self.startDate = activity.startDate
             }
         }
     }
 }
-
 
